@@ -14,7 +14,7 @@
         "corpo" : "Una sintassi del json e ad oggetto che è una serie non ordinata di nomi o valori. Un oggetto inizia con {parentesi graffa sinistra e finisce con }parentesi graffa destra. Ogni nome è seguito da :due punti e la coppia di nome o valore sono separata da ,virgola",
         "code" : null,
         "link": null,
-        "image" : "C:\\Users\\Utente\\Desktop\\4C_ALBA_LUCA\\TPSIT\\A1_Progetti\\Alba_Luca_Guida_Beta\\Img\\JSON_OBJECT.png"
+        "image" : "./Img/JSON_OBJECT.png"
     },
 
     {
@@ -23,7 +23,7 @@
         "corpo" : "Un altra sintassi del Json è: un array, ovvero una raccolta ordinata di valori. Un array comincia con [parentesi quadra a sinistra e finisce con la ]parentesi quadra a destra. I valori sono separati da una ,virgola.",
         "code" : null,
         "link": null,
-        "image" : "C:\\Users\\Utente\\Desktop\\4C_ALBA_LUCA\\TPSIT\\A1_Progetti\\Alba_Luca_Guida_Beta\\Img\\JSON_ARRAY.png"
+        "image" : "./Img/JSON_ARRAY.png"
     },
 
     {
