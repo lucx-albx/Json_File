@@ -23,7 +23,7 @@
         "corpo" : "Una volta scaricato Node.js puoi aprire il tuo prompt di comandi e digitare:\nnpx create-react-app NomeCheVuoi\nquesto comando ti crereà la cartella con tutto il necessario al suo interno. Una volta aperta la cartella ci troviamo di fronte 3 cartelle, la prima sarà node-modules, come ti consiglia il nome ci saranno tutti i moduli necessari per ora, la seconda cartella sarà public, ovvero la cartella che contiene index.html della nostra pagina e infine src, la cartella che conterrà il nostro progetto, quindi cliccala e ti ritroverai di fronte a te molti file ma quelli che ci interessano sono principalmente App.js e App.css, quindi aprili. in App.js ti troverai di base una pagina d'esempio di questo genere:\n",
         "code" : null,
         "link" : null,
-        "image" : "C:\\Users\\Utente\\Desktop\\4C_ALBA_LUCA\\TPSIT\\A1_Progetti\\Alba_Luca_Guida_Beta\\Img\\PrimaPaginaReact.png"
+        "image" : "./Img/PrimaPaginaReact.png"
     },
 
     {
@@ -104,7 +104,7 @@
         "corpo" : "Per applicare bootstrap con i cdn dobbiamo andare nella cartella public e poi una volta aperta essa cerchiamo il file index.html, una volta fatto ciò metti il link del css nel head e nel body vai a mettere i tre script.",
         "code" : null,
         "link" : null,
-        "image" : null
+        "image" : "./Img/BootstrapCdn.png"
     },
 
     {
