@@ -11,7 +11,7 @@
     {
         "titolo": "Installazione",
         "sotto_titolo" : null,
-        "corpo" : "Per poter iniziare a programmare in React dobbiamo prima scaricare Node.js, per poterlo scaricare ti puoi recare sul loro  <a href='https://nodejs.org/en/' target='_blank'>&nbsp;sito ufficiale</a>, io ti consiglio di scaricare la LTS, ovvero l'ultima versione disponibile di Node.",
+        "corpo" : "Per poter iniziare a programmare in React dobbiamo prima scaricare Node.js, per poterlo scaricare ti puoi recare sul loro <a href='https://nodejs.org/en/' target='_blank'>sito ufficiale</a>, io ti consiglio di scaricare la LTS, ovvero l'ultima versione disponibile di Node.",
         "code" : null,
         "link" : null,
         "image" : null
@@ -110,7 +110,7 @@
     {
         "titolo": null,
         "sotto_titolo" : "Bootstrap x Moduli",
-        "corpo" : "Prima di applicare Bootstrap con i moduli è giusto che tu sappia che tutte le funzioni di bootstrap che usavamo utilizzando i CDN, ovvero <strong><span><</span>div className='col-xl-2'>prova<span></</span>div></strong>, con i moduli lo andremo a scrivere: <strong><span><</span>Col xl={2}>prova<span></</span>Col><strong> ed inoltre ogni elemento che andiamo ad usare dovremmo importarlo.",
+        "corpo" : "Prima di applicare Bootstrap con i moduli è giusto che tu sappia che tutte le funzioni di bootstrap che usavamo utilizzando i CDN, ovvero <strong><span><</span>div className='col-xl-2'>prova<span></</span>div></strong>, con i moduli lo andremo a scrivere: <strong><span><</span>Col xl={2}>prova<span></</span>Col></strong> ed inoltre ogni elemento che andiamo ad usare dovremmo importarlo.",
         "code" : null,
         "link" : null,
         "image" : null
