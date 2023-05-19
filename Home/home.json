@@ -2,7 +2,7 @@
     {
         "titolo": "Introduzione",
         "sotto_titolo": null,
-        "corpo": "Prima di iniziare ti consiglio di prepararti con il tuo editor di testo preferito, se come editor usi visual studio code ti consiglio di inserire queste estensioni che ci daranno una mano in generale nello sviluppo di siti web:\n\n- Bootstrap v4 Snippets\n- HTML CSS Support\n- HTML Snippets\n",
+        "corpo": "Prima di iniziare ti consiglio di prepararti con il tuo editor di testo preferito, se come editor usi visual studio code ti consiglio di inserire queste estensioni che ci daranno una mano in generale nello sviluppo di siti web:\n\n<strong>- Bootstrap v4 Snippets\n- HTML CSS Support\n- HTML Snippets</strong>\n",
         "link" : null,
         "image" : null
     },
