@@ -1,0 +1,38 @@
+[
+    {
+        "titolo": "Cos'è il json",
+        "sotto_titolo" : null,
+        "corpo" : "JSON è un formato di serializzazione basato su testo per lo scambio di dati, principalmente tra server e applicazione web. JSON è l'acronimo di JavaScript Object Notation, e utilizza l'estensione di file . json. JSON è un concorrente di XML, ma possiede una sintassi più semplice e compatta rispetto ad esso.",
+        "code" : null,
+        "link": null,
+        "image" : null
+    },
+
+    {
+        "titolo": null,
+        "sotto_titolo" : "#1 Sintassi Json",
+        "corpo" : "Una sintassi del json e ad oggetto che è una serie non ordinata di nomi o valori. Un oggetto inizia con {parentesi graffa sinistra e finisce con }parentesi graffa destra. Ogni nome è seguito da :due punti e la coppia di nome o valore sono separata da ,virgola",
+        "code" : null,
+        "link": null,
+        "image" : "C:\\Users\\Utente\\Desktop\\4C_ALBA_LUCA\\TPSIT\\A1_Progetti\\Alba_Luca_Guida_Beta\\Img\\JSON_OBJECT.png"
+    },
+
+    {
+        "titolo": null,
+        "sotto_titolo" : "#2 Sintassi JSON:",
+        "corpo" : "Un altra sintassi del Json è: un array, ovvero una raccolta ordinata di valori. Un array comincia con [parentesi quadra a sinistra e finisce con la ]parentesi quadra a destra. I valori sono separati da una ,virgola.",
+        "code" : null,
+        "link": null,
+        "image" : "C:\\Users\\Utente\\Desktop\\4C_ALBA_LUCA\\TPSIT\\A1_Progetti\\Alba_Luca_Guida_Beta\\Img\\JSON_ARRAY.png"
+    },
+
+    {
+        "titolo": "Fetch",
+        "sotto_titolo" : null,
+        "corpo" : "La fetch utilizza due .then() nel primo si va 'selezionare' il JSON e nella seconda vengono presi i suoi dati, e all'intero di essa viene fatto un callBack per poi andare a visualizzare questi dati nel nostro sito. Ma vediamo un esempio!",
+        "code" : ["                    \n    const url = 'https://raw.githubusercontent.com/icobasco/sample_data_files/master/pera_misure_sample.json'\n\n    const datiLoading =()=>{\n        fetch(url)\n        .then((dati) => dati.json())\n        .then((data)=>{\n            const dateTable = document.querySelector('table tbody');\n    \n            let insert = ''\n            data.forEach(function({lora_device_id, data, measured_at}) {\n    \n                insert += '<tr>';\n                insert += `<td>${lora_device_id}</td>`\n                insert += `<td>${measured_at}</td>`\n                insert += `<td>${data.sensor1.lowRes.humidity}</td>`\n                insert += `<td>${data.sensor1.lowRes.humidity}</td>`\n                insert += '<tr>';\n        \n            })\n            dateTable.innerHTML = insert;\n        })\n    }\n        \n"],
+        "link": null,
+        "image" : null
+    }
+
+]

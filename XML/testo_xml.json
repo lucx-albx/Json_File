@@ -1,0 +1,28 @@
+[
+    {
+        "titolo": "Cos'è XML?",
+        "sotto_titolo" : null,
+        "corpo" : "XML è un linguaggio che permette la rappresentazione di documenti e dati strotturati su un rapporto digitale. Xml è molto utilizzato per la memorizzazione e distribuzione di documenti digitali. Ogni documento XML inizia con un prologo, che contiene un XML declaraion.",
+        "code" : ["        \n    <?xml version='1.0' encoding='UTF-8'?>\n\n    <prenotazione>\n        <idVolo>PA321</idVolo>\n        <idCliente>PP2305</idCliente>\n        <data>22-10-2001</data>\n        <prezzo valuta='EURO'>245</prezzo>\n    </prenotazione>\n      \n"],
+        "link": null,
+        "image" : null
+    },
+
+    {
+        "titolo": "Fetch",
+        "sotto_titolo" : null,
+        "corpo" : "La fetch è possibile pure con XML. A differenza del json prima di predere i suoi dati bisognerà prima qualche passaggio in più.",
+        "code" : ["                    \n    const url = 'https://raw.githubusercontent.com/icobasco/sample_data_files/master/4C_catalogoFilm.xml'\n\n    const datiLoading =()=>{\n        fetch(url)\n        .then((catalogo) => catalogo.text())\n        .then((data)=>{\n            let mioXML= new DOMParser(); \n            let parseXML =  mioXML.parseFromString(data,'text/xml') \n            let titoli =  parseXML.querySelectorAll('titolo')\n            let genere =  parseXML.querySelectorAll('generi genere')\n            let anno =  parseXML.querySelectorAll('anno')\n            const dateTable = document.querySelector('table tbody');\n    \n            let insert = ''\n            for(let i = 0; i < titoli.length; i++ ){\n                insert += '<tr>';\n                insert += `<td>${titoli[i].innerHTML}</td>`\n                insert += `<td>${genere[i].attributes.value.textContent}</td>`\n                insert += `<td>${anno[i].attributes.value.textContent}</td>`\n                insert += '<tr>';\n            }\n            dateTable.innerHTML = insert;\n        })\n    }\n       \n"],
+        "link": null,
+        "image" : null
+    },
+
+    {
+        "titolo": "DTD",
+        "sotto_titolo" : null,
+        "corpo" : "DTD significa = Document Type Definition, Esso è un linguaggio che serve per definire la grammatica che descrive la composizione degli elementi contenuti in una certa classe di un documento XML. In pochè parole è uno strumento che serve per la validazion dei documenti XML, ed è imporate sapere che non è un linguaggio XML.",
+        "code" : ["                    \n        <?xml version='1.0' encoding='UTF-8'?>\n        <!DOCTYPE catalogo SYSTEM 'esempio.dtd'>\n        \n        <catalogo>\n            <film id='l001'>\n                <titolo>Il padrino</titolo>\n                <generi>\n                    <genere value='Drammatico'/>\n                </generi>\n                <attori>\n                    <genere value='Michael Corleone'/>\n                </attori>\n                <registi>\n                    <regista nome='Francis Ford Coppola'</>\n                </registi>\n                <originale value='SI'/>\n                <formato value='VHS'/>\n                <anno value='1972'/>\n                <voto value='2'/>\n            </film>\n        ...\n        </catalogo>\n                \n", "                    \n        <!ELEMENT catalogo (film*)>\n        <!ELEMENT film (titolo, generi, attori, registe, originale, formato, anno, voto?)>\n        <!ATTLIST film id ID #REQUIRED>\n\n        <!ELEMENT titolo (#PCDATA)>\n\n        <!ELEMENT registe (regista+)>\n        <!ELEMENT regista EMPTY>\n        <!ATTLIST regista nome CDATA #REQUIRED>\n\n        <!ELEMENT generi (genere+)>\n        <!ELEMENT genere EMPTY>\n        <!ATTLIST genere value CDATA #REQUIRED> \n\n        <!ELEMENT attori (attore*)>\n        <!ELEMENT attore EMPTY>\n        <!ATTLIST attore nome CDATA #REQUIRED>\n\n        <!ELEMENT formato EMPTY>\n        <!ATTLIST formato value (VHS | DVD) #REQUIRED>\n\n        <!ELEMENT anno EMPTY>\n        <!ATTLIST anno value CDATA #REQUIRED>\n\n        <!ELEMENT originale EMPTY>\n        <!ATTLIST originale value (si | no) 'si'>\n\n        <!ELEMENT voto EMPTY>\n        <!ATTLIST voto value (1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10) #REQUIRED>\n       \n"],
+        "link": null,
+        "image" : null
+    }
+]
